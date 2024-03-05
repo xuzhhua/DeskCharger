@@ -1,0 +1,403 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DeskCharger.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DESKCHARGER_DIALOG DIALOGEX 0, 0, 204, 149
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DeskCharger Professional Edition"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDC_CLOSE,147,128,50,14
+    CONTROL         "Tab1",IDC_MAINTAB,"SysTabControl32",0x0,7,7,190,115
+    CONTROL         "开机后自动运行",IDC_AUTORUN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,129,71,11
+END
+
+IDD_CDROM DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_CDROMLAB,5,5,28,51,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "HotKey1",IDC_CDROMSETHOTKEY,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,5,22,174,14
+    EDITTEXT        IDC_AUTOCLOSE,5,41,23,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "退出Windows前自动弹出光盘",IDC_AUTOEJECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,60,116,12
+    PUSHBUTTON      "设置",IDC_SETCDROMHOTKEY,5,77,43,13
+    PUSHBUTTON      "设置为主光驱",IDC_SETDEFAULTCDROM,57,77,73,13
+    PUSHBUTTON      "缺省",IDC_SETCDROMDEFAULT,139,77,43,13
+    LTEXT           "秒(0-60)后自动关闭打开的光驱",IDC_LAB,31,43,116,10
+    LTEXT           "",IDC_MAINCDROM,41,7,137,10
+END
+
+IDD_HOTKEY DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_HOTKEYLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,5,5,177,68
+    PUSHBUTTON      "",IDC_ADDHOTKEYNEW,66,77,13,13
+    PUSHBUTTON      "",IDC_READHOTKEYINFO,50,77,13,13
+    PUSHBUTTON      "",IDC_DELHOTKEYINFO,82,77,13,13
+    PUSHBUTTON      "设置",IDC_SAVEHOTKEYINFO,139,77,43,13
+    PUSHBUTTON      "",IDC_EDITHOTKEYINFO,98,77,13,13
+    COMBOBOX        IDC_COMBOKEYSELECT,5,77,30,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TIMER DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_TIMELIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,5,5,177,68
+    PUSHBUTTON      "计时",IDC_STARTTIME,139,77,43,13
+    PUSHBUTTON      "",IDC_ADDTIMENEW,21,77,13,13
+    PUSHBUTTON      "",IDC_READTIMEINFO,5,77,13,13
+    PUSHBUTTON      "",IDC_DELTIMEINFO,37,77,13,13
+    PUSHBUTTON      "设置",IDC_SAVETIMEINFO,91,77,43,13
+    PUSHBUTTON      "",IDC_EDITTIMEINFO,53,77,13,13
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,9,9,20,20,SS_REALSIZEIMAGE
+    CTEXT           "DeskCharger Professional Edition",IDC_STATIC,34,13,120,
+                    8
+    CTEXT           "Version 1.0.0012",IDC_STATIC,52,26,84,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,12,1
+ PRODUCTVERSION 1,0,12,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DeskCharger Professinal Edition\0"
+            VALUE "FileVersion", "1, 0, 12, 1\0"
+            VALUE "InternalName", "DeskCharger Pro\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003 徐仲华\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DeskCharger.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DeskCharger 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 12, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DESKCHARGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "Open Folder 4.ico"
+IDI_TRAYNORMAL          ICON    DISCARDABLE     "Open Folder 3.ico"
+IDI_TRAYABNORMAL        ICON    DISCARDABLE     "Open Folder.ico"
+IDI_SETTING             ICON    DISCARDABLE     "setting.ico"
+IDI_DEFAULT             ICON    DISCARDABLE     "default.ico"
+IDI_SAVE                ICON    DISCARDABLE     "Save.ico"
+IDI_CDROMDEFAULT        ICON    DISCARDABLE     "CDROM.ico"
+IDI_CLOSEDLG            ICON    DISCARDABLE     "stop.ico"
+IDI_DELINFO             ICON    DISCARDABLE     "del.ico"
+IDI_EDITINFO            ICON    DISCARDABLE     "edit.ico"
+IDI_NEWINFO             ICON    DISCARDABLE     "new.ico"
+IDI_READINFO            ICON    DISCARDABLE     "read.ico"
+IDI_TIMING              ICON    DISCARDABLE     "Timing.ico"
+IDI_ENABLE              ICON    DISCARDABLE     "Enable.ico"
+IDI_DISABLE             ICON    DISCARDABLE     "Disable.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDM_OPTION
+    BUTTON      IDM_HELP
+    BUTTON      IDM_UNINST
+    BUTTON      IDM_EXIT
+END
+
+IDR_LSTTOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDM_LSTADDNEW
+    BUTTON      IDM_LSTEDIT
+    BUTTON      IDM_LSTDELCUR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "toolbar.bmp"
+IDR_LSTTOOLBAR          BITMAP  DISCARDABLE     "lsttoolb.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_HOTKEY DLGINIT
+BEGIN
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3146, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3246, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3346, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3446, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3546, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3646, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3746, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3846, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 3, 0
+0x3946, "\000" 
+    IDC_COMBOKEYSELECT, 0x403, 4, 0
+0x3146, 0x0030, 
+    IDC_COMBOKEYSELECT, 0x403, 4, 0
+0x3146, 0x0031, 
+    IDC_COMBOKEYSELECT, 0x403, 4, 0
+0x3146, 0x0032, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRMSGCODE          "错误代码: "
+    IDS_ERRMSGPOS           "错误发生位置: "
+    IDS_MAINCDROM           "主光驱为 "
+    IDS_SAVE                "保存"
+    IDS_SET                 "设置"
+    IDS_HOTKEYWARM          "请指定Ctrl, Alt, Shift之中的一个或多个作为组合键"
+    IDS_TOOMANYCDROM        "检测到系统上的光驱设备数多于10个，本软件只支持前10个光驱设备"
+    IDS_TOOLARGERVALUE      "您输入的值超过了允许的范围，请检查"
+    IDS_CDROMNOTSAVED       "\n光驱设置"
+    IDS_HOTCMDNOTSAVED      "\n热键设置"
+    IDS_TIMINGNOTSAVED      "\n定时设置"
+    IDS_PLEASESAVE          "\n请确认保存了所有更改的设置"
+    IDS_NOTSAVED            "您未保存以下的修改："
+    IDS_AUTOEJECT           "您的光驱内有光盘未取出，取出后请按确定关闭光驱"
+    IDS_CDROMDEFAULT        "将当前的光驱设置为主光驱，\r\n单击系统托盘图标打开/关闭该光驱"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEFAULT             "清除当前所有设置，\r\n恢复到缺省状态"
+    IDS_SETINFO             "更改现存设置"
+    IDS_SAVEINFO            "保存更改的设置"
+    IDS_CLOSEDLG            "关闭程序选项对话框"
+    IDS_NOCDROM             "您的计算机上没有光驱设备"
+    IDS_UNABLEGETVER        "获取Windows版本时发生不可预知的错误，\n为保持系统稳定本程序将自动关闭"
+    IDS_REGERROR            "获取注册表信息时发生严重错误，\n为保持系统稳定本程序将自动关闭"
+    IDS_TRAYINFO            "已经成功启动"
+    IDS_TRAYINFOTITLE       "DeskCharger Pro"
+    IDS_MENUENABLE          "禁用"
+    IDS_MENUOPTION          "显示程序选项"
+    IDS_MENUHELP            "帮助"
+    IDS_MENUUNINST          "删除程序"
+    IDS_MENUEXIT            "退出程序"
+    IDS_TABCDROMSET         "光驱设置"
+    IDS_TABHOTKEYSET        "热键设置"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TABTIMINGSET        "定时设置"
+    IDS_TABABOUT            "关于"
+    IDS_GETAPPNAMEERR       "取得程序名时发生错误，当前操作无法生效"
+    IDS_TIMING              "开始计时"
+    IDS_READINFO            "读取信息"
+    IDS_ADDINFO             "新建项目"
+    IDS_DELINFO             "删除信息"
+    IDS_EDITINFO            "编辑信息"
+    IDS_LSTHOTKEYDEFINE     "组合键"
+    IDS_LSTHOTKEYENABLE     "有效"
+    IDS_LSTHOTKEYFUNC       "定义的功能"
+    IDS_CONTROLPAD          "打开控制面板"
+    IDS_ADDREMOVEAPP        "打开添加/删除程序"
+    IDS_NOTEPAD             "打开记事本"
+    IDS_MSDOSMODE           "打开MS-DOS方式"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CALCPAD             "打开计算器"
+    IDS_IEEXPLORER          "打开Internet Explorer"
+    IDS_SHUTDOWN            "关闭计算机"
+    IDS_RESTART             "重新启动计算机"
+    IDS_LOGOFF              "注销当前用户"
+    IDS_SCREENSAVER         "启动屏幕保护程序"
+    IDS_WAITMODE            "计算机进入等待状态"
+    IDS_SLEEPMODE           "计算机进入休眠状态"
+    IDS_UNABLEGETPATH       "获取Windows路径时发生不可预知的错误，\n为保持系统稳定本程序将自动关闭"
+    IDS_LSTENABLECUROPTION  "允许当前项目"
+    IDS_LSTDISABLECUROPTION "禁止当前项目"
+    IDS_LSTDELETECUROPTION  "删除当前项目"
+    IDS_LSTEDITCUR          "编辑当前项目"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LSTADDNEW           "新建项目"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DeskCharger.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

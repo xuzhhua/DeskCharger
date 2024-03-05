@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DeskCharger - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/DeskCharger.res" /d "_DEBUG" "C:\Documents and Settings\ÐìÖÙ»ª\×ÀÃæ\DeskCharger\Code\DeskCharger\DeskCharger.rc"" 
+Creating temporary file "C:\DOCUME~1\ÐìÖÙ»ª\LOCALS~1\Temp\RSP60.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DeskCharger.pdb" /debug /machine:I386 /out:"Debug/DeskCharger.exe" /pdbtype:sept 
+".\Debug\BCMenu.obj"
+".\Debug\BtnST.obj"
+".\Debug\ColorStatic.obj"
+".\Debug\DeskCharger.obj"
+".\Debug\DeskChargerDlg.obj"
+".\Debug\DlgAbout.obj"
+".\Debug\DlgCDROM.obj"
+".\Debug\DlgHotkey.obj"
+".\Debug\DlgShutDown.obj"
+".\Debug\DlgTimer.obj"
+".\Debug\HECDROM.OBJ"
+".\Debug\HEHotExec.obj"
+".\Debug\HETime.obj"
+".\Debug\HKAddEdit.obj"
+".\Debug\HotKeyExec.obj"
+".\Debug\HyperLink.obj"
+".\Debug\NewTabCtrl.obj"
+".\Debug\StdAfx.obj"
+".\Debug\WinXPButtonST.obj"
+".\Debug\DeskCharger.res"
+]
+Creating command line "link.exe @"C:\DOCUME~1\ÐìÖÙ»ª\LOCALS~1\Temp\RSP60.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+DeskCharger.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
